@@ -1,5 +1,5 @@
 div, span, p, td {
-	font-family: Arial, sans-serif;
+	font-family: 'Nobile', sans-serif;
 }
 #content {
 	width: 100%;
@@ -33,6 +33,7 @@ div, span, p, td {
 	position: absolute;
 	display: inline-block;
 	margin-left: -100px;
+	margin-top: 130px;
 }
 #smoother {
 	margin: 0 0 10px 16px;
