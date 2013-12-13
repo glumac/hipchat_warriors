@@ -1,28 +1,48 @@
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype'),
+         url('../fonts/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	font-family: 'Nobile', sans-serif;
-	background-color: #C9F2BA;
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: #DFF4E9;
+	color: #2F3443
 }
 
 #content {
-	font-family: 'Nobile', sans-serif;
-	margin: auto;
-	margin-left: 20px
+	width: 1000px; 
+	font-family: 'Open Sans', Arial, sans-serif;
+	position: relative;
+	margin: 0, auto;
 }
 
 #text {
-	font-family: 'Nobile', sans-serif;
-	font-size: 12px;
-	margin-left: 60px;
+	padding: 30px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	background-color:rgba(255,255,255,0.5);
 	max-width: 800px;
-	margin-top: 20px
+	margin-bottom: 150px;
+	margin: 0 auto;
 }
 
 #text2 {
-	font-family: 'Nobile', sans-serif;
-	font-size: 12px;
-	margin-left: 60px;
+	padding: 30px;
+	font-size: 13px;
+	line-height: 24px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	background-color:rgba(255,255,255,0.5);
 	max-width: 800px;
-	margin-top: -50px;
+	margin: 0 auto;
+	max-width: 800px;
+	margin-top: 70px;
 	margin-bottom: 50px;
 }
 
@@ -36,7 +56,7 @@ body {
 }
 
 #photo {
-	font-family: 'Nobile', sans-serif;
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
 	font-size: 11px;
 	width: 300px;
 	margin-left: 100px;
@@ -44,10 +64,17 @@ body {
 	margin-top: 30px;
 }
 
+h1{
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	font-size: 60px;
+	color: #EB2E4D;
+}
+
 h3{
+	color: #666F75;
 	margin-bottom: 50px
 }
 
 span {
-	font-weight: bold
-}
+	font-size: 14px;
+	font-weight

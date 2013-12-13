@@ -2,14 +2,15 @@ div, span, p, td {
 	font-family: 'Nobile', sans-serif;
 }
 #content {
-	width: 100%;
-	min-width: 800px;
+	position: fixed;
+	width: 80%;
+	min-width: 1200px;
 	margin:0 auto;
-	margin-left: 20px;
 }
+
 #chart {
 	display: inline-block;
-	margin:100 auto;
+	margin: 20px;
 }
 #chart path {
 	-webkit-transition: opacity 0.2s linear;
@@ -23,17 +24,18 @@ div, span, p, td {
 	left: 8px;
 }
 #legend_container {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 26px;
 	width: 0;
 }
 #chart_container {
-	width: 800;
-	position: absolute;
+
+	min-width: 800;
+	position: relative;
 	display: inline-block;
-	margin-left: -100px;
-	margin-top: 130px;
+/*	margin-left: -100px;*/
+	margin-top: 50px;
 }
 #smoother {
 	margin: 0 0 10px 16px;
@@ -46,8 +48,10 @@ div, span, p, td {
 	border: 1px solid #f0f0f0;
 }
 #side_panel {
-	padding: 0 20px 20px 0;
-	width: 240px;
+	padding: 0 10px 10px 0;
+	max-width: 190px;
+	margin-right: -50px;
+	margin-left: 50px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -138,12 +142,12 @@ label.disabled {
 #interpolation_form,
 #offset_form {
 	vertical-align: top;
-	display: inline-block;
-	width: 45%;
+	display: inline;
+	width: 100%;
 }
 #interpolation_form label,
 #offset_form label {
-	display: block;
+	display: inline;
 }
 label[for=area] {
 	background: url(../images/om_stack.png);

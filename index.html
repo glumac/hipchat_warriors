@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Hipchat Warriors</title>
+	<title>HIPCHAT WARRIORS</title>
+	<link rel="shortcut icon" href="images/glufavicon.png">
 	<!-- css -->
 	<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
 	<link type="text/css" rel="stylesheet" href="css/graph.css">
@@ -10,6 +11,11 @@
 	<link type="text/css" rel="stylesheet" href="css/extensions.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+
+<!-- Favicon
+	================================================== -->
+	<link rel="shortcut icon" href="images/glufavicon.png">
+
 
 <!-- Eyes of T.J. Eckleburg -->
 	<script>
@@ -26,7 +32,7 @@
 <body>
 
 	<div id = "text">
-		<h1>Hipchat Warriors</h1>
+		<h1>HIPCHAT WARRIORS</h1>
 		<h3>A D3.js data visualiation.  And potential braggadocio debunker. </h3>
 
 		<p>Meet Joe.</p>
@@ -55,56 +61,33 @@
 
 		<p>Joe can often be found in the chatroom, after conversation has  started to wind down at about 2am, saying "Hipchat Warrior Status: achieved."  He prides himself in being the last guy standing.  I wondered:  is Joe really the most midnight oil-burning member of our class?</p>
 
-		<p>To answer this question, I decided to make a little data visualization.  I took the data from our class chatroom, massaged it with some regular expressions (while dodging flying cars), created a data visualization using D3.js.  </p>
+		<p>To answer this question, I decided to make a little data visualization.  I took the data from our class chatroom, massaged it with some regular expressions (while dodging flying cars, of course), created an interactive graph using D3.js.  </p>
 
 		<p>	Here's what what our months of chats graphed over a 24-hour cycle looks like! </p>
 
 	</div>
 
 	<div id="content">
-
 		<form id="side_panel">
-			<h1>Hipchat Warriors</h1>
+			<!-- <h1>Hipchat Warriors</h1> -->
 			<p>Midnight to Midnight<p>
 			<section><div id="legend"></div></section>
-			<section>
-				<div id="renderer_form" class="toggler">
-					<input type="radio" name="renderer" id="area" value="area" checked>
-					<label for="area">area</label>
-					<input type="radio" name="renderer" id="bar" value="bar">
-					<label for="bar">bar</label>
-				</div>
-			</section>
-			<section>
-				<div id="offset_form">
-					<label for="stack">
-						<input type="radio" name="offset" id="stack" value="zero" checked>
-						<span>stack</span>
-					</label>
-					<label for="pct">
-						<input type="radio" name="offset" id="pct" value="expand">
-						<span>pct</span>
-					</label>
-				</div>
-			</section>
-			<section>
-				<h6>Smoothing</h6>
-				<div id="smoother"></div>
-			</section>
-			<section></section>
 		</form>
 
-		<div id="chart_container">
-			<div id="chart"></div>
-			<div id="timeline"></div>
-			<div id="slider"></div>
-		</div>
+			<div id="chart_container">
+				<div id="chart"></div>
+				<div id="timeline"></div>
+				<div id="slider"></div>
+			</div>
+
 	</div>
 
 <div id = "text2">
-	<p>So what do we see?  First, <i>everybody</i> in the class seems to prefer (or endure) staying up late to work.   The chatroom's peak hours are after midnight.  Activity dies after 2am, and then picks back up around 7am.  There are dips during lunch and dinner times, and peaks during mid morning and afternoon.  All this might be expected, and you can see variations in individuals' chat patterns.  Some people are active early, and others late.  As for Joe, is he really the mighiest Hipchat Warrior of them all?</p>  
+	<p>So what do we see?  First, <i>everybody</i> in the class seems to prefer (or endure) staying up late to work.   The chatroom's peak hours are after midnight.  Activity dies after 2am, and then picks back up around 7am.  There are dips during lunch and dinner times, and peaks during mid morning and afternoon.  All this might be expected, and you can see variations in individuals' chat patterns.  Some people are active early, and others late.  As for Joe, is he really the mightiest Hipchat Warrior of them all?</p>  
 
-	<p>Indeed Joe is!  With more than twice as many chats after midnight than the next-closest classmate, Joe is posing coding questions and helping out his classmates more, and later, than anybody else.  But what percentage of his chats are deliriously posted gifs.  Such secrets shall remain safely locked away in archived class chat logs, known only to to Joe's fellow <span>Hipchat Warriors</span>.</p>
+	<p>Indeed Joe is!</p>
+
+  <p>With more than twice as many chats after midnight than the next-closest classmate, Joe is posing coding questions and helping out his classmates more, and later, than anybody else.  But what percentage of his chats are deliriously posted gifs.  Such secrets shall remain safely locked away in archived class chat logs, known only to to Joe's fellow <span>Hipchat Warriors</span>.</p>
 </div>  	
 
 </body>
@@ -120,6 +103,7 @@
 <script src="js/Rickshaw.Graph.Renderer.js"></script>
 <script src="js/Rickshaw.Graph.Renderer.Area.js"></script>
 <script src="js/Rickshaw.Graph.Renderer.Bar.js"></script>
+<script src="js/Rickshaw.Graph.Renderer.Stack.js"></script>
 <script src="js/Rickshaw.Graph.RangeSlider.js"></script>
 <script src="js/Rickshaw.Graph.HoverDetail.js"></script>
 <script src="js/Rickshaw.Graph.Annotate.js"></script>
