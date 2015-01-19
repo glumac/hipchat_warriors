@@ -15,58 +15,10 @@ body {
 	color: #2F3443
 }
 
-#content {
-	width: 1000px; 
-	font-family: 'Open Sans', Arial, sans-serif;
-	position: relative;
-	margin: 0, auto;
-}
-
-#text {
-	padding: 30px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	background-color:rgba(255,255,255,0.5);
-	max-width: 800px;
-	margin-bottom: 150px;
-	margin: 0 auto;
-}
-
-#text2 {
-	padding: 30px;
-	font-size: 13px;
-	line-height: 24px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	background-color:rgba(255,255,255,0.5);
-	max-width: 800px;
-	margin: 0 auto;
-	max-width: 800px;
-	margin-top: 70px;
-	margin-bottom: 50px;
-}
-
-#joe {
-	width: 150px;
-}
-
-
-#legend {
-	background-color: #CDD2FF;
-}
-
-#photo {
-	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
-	font-size: 11px;
-	width: 300px;
-	margin-left: 100px;
-	margin-bottom: 30px;
-	margin-top: 30px;
-}
-
 h1{
 	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
 	font-size: 60px;
+	line-height: 60px;
 	color: #EB2E4D;
 }
 
@@ -75,6 +27,50 @@ h3{
 	margin-bottom: 50px
 }
 
-span {
-	font-size: 14px;
-	font-weight
+.hipchat-text {
+	padding: 30px;
+	font-size: 13px;
+	line-height: 18px;
+	background-color:rgba(255,255,255,0.5);
+	margin: 0 20px 150px 20px;
+	margin: 0 auto;
+}
+
+.hipchat-text span {
+	font-style: italic;
+}
+
+.hipchat-text2 {
+	margin-top: 50px;
+}
+
+.joe {
+	float: left;
+	width: 170px;
+	margin: 0 20px 20px 0;
+}
+
+.regular-expression {
+	float: right;
+	width: 350px;
+	margin: 0 0 20px 20px;
+	max-width: 100%;
+}
+
+.regular-expression span {
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.regular-expression img{
+	width: 100%;
+}
+
+#legend {
+	background-color: #CDD2FF;
+}
+
+#content {
+	position: relative;
+	margin: 0, auto;
+}

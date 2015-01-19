@@ -1,12 +1,6 @@
 div, span, p, td {
 	font-family: 'Nobile', sans-serif;
 }
-#content {
-	position: fixed;
-	width: 80%;
-	min-width: 1200px;
-	margin:0 auto;
-}
 
 #chart {
 	display: inline-block;
