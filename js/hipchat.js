@@ -813,7 +813,6 @@ $(document).ready(function(){
 		var legend = new Rickshaw.Graph.Legend( {
 			graph: graph,
 			element: document.getElementById('legend')
-
 		} );
 
 		var shelving = new Rickshaw.Graph.Behavior.Series.Toggle( {
@@ -864,7 +863,6 @@ $(document).ready(function(){
 	makeGraph();
 
 	$(window).resize(function(){
-		console.log('wohoo')
 		makeGraph();
 	});
 

@@ -3,7 +3,6 @@
 	<head>
 		<title>HIPCHAT WARRIORS</title>
 		<link rel="shortcut icon" href="images/glufavicon.png">
-		<!-- css -->
 		<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
 		<link type="text/css" rel="stylesheet" href="css/graph.css">
 		<link type="text/css" rel="stylesheet" href="css/detail.css">
@@ -11,27 +10,23 @@
 		<link type="text/css" rel="stylesheet" href="css/extensions.css">
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
-		<!-- Favicon
-		================================================== -->
 		<link rel="shortcut icon" href="images/glufavicon.png">
 	</head>
 
 	<body>
-
 		<div class="hipchat-text">
 			<h1>HIPCHAT WARRIORS</h1>
-			<h3>A D3.js data visualization.  And potential braggadocio debunker. </h3>
+			<h3>D3.js data visualization. Potential braggadocio debunker.</h3>
 			<img class="joe" src="images/joe.jpg" alt="joe.jpg">
 			<p>Meet Joe.</p>
 			
-			<p>Joe is my classmate in General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> class.  During the twelve hours a day we have spent together over the past few months, Joe has told me many things about himself.</p>
+			<p>Joe is my classmate in General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> class. During the twelve hours a day we have spent together over the past few months, Joe has told me many things about himself.</p>
 
 			<p>Some true, some not.</p>
 
-			<p>Joe told me he doesn't have a New York accent.  When I contested this ludicrous assertion he may have *actually* said "Waddya tawkin abawt?"... and then scurried away to buy a knish.</p>
+			<p>Joe told me he doesn't have a New York accent. When I contested this ludicrous assertion he may have *actually* said "Waddya tawkin abawt?"... and then scurried away to buy a knish.</p>
 
-			<p>Joe claims to be a hard-working guy.  Now this, I have no reason to doubt -  Joe's usually the first guy at campus and the last to leave.  But he has this weird term to refer to himself - "Hipchat Warrior". </p>
-
+			<p>Joe claims to be a hard-working guy. Now this, I have no reason to doubt - Joe's usually the first guy at campus and the last to leave. But he has this weird term to refer to himself - "Hipchat Warrior". </p>
 
 			<div class="regular-expression">
 				<span>Typical Gif shared in class Hipchat:</span><br>
@@ -39,18 +34,17 @@
 				<i>When your regular expression returns what you expect</i><br>
 			</div>
 
-			<p>I'll explain.  Our class has a dedicated chatroom in an excellent program called Hipchat.  We use this chatroom to share useful resources, and also lot and lots of gifs like this: </p>
+			<p>I'll explain. Our class has a dedicated chatroom in an excellent program called Hipchat. We use this chatroom to share useful resources, and also lot and lots of gifs like this: </p>
 
-			<p>Hipchat has proven consistently useful as a way to communicate about projects at all hours.  The chatroom is busy during the day, but really picks up late at night when most students are trying to finish whatever assignment is due first thing in the morning, with hopes of catching a few sweet, sweet hours of sleep. </p>
+			<p>Hipchat has proven consistently useful as a way to communicate about projects at all hours. The chatroom is busy during the day, but really picks up late at night when most students are trying to finish whatever assignment is due first thing in the morning, with hopes of catching a few sweet, sweet hours of sleep. </p>
 
-			<p>Joe can often be found in the chatroom after 2am, when conversation has started to wind down, saying "Hipchat Warrior Status: achieved."  He prides himself in being the last guy standing.  I wondered: is Joe really the most midnight oil-burning member of our class?</p>
+			<p>Joe can often be found in the chatroom after 2am, when conversation has started to wind down, saying "Hipchat Warrior Status: achieved." He prides himself in being the last guy standing. I wondered: is Joe really the most midnight oil-burning member of our class?</p>
 
-			<p>To answer this question, I made the following data visualization.  I took the logs from our class chatroom, massaged them with some regular expressions (while dodging flying cars, of course), and created an interactive graph using D3.js.  </p>
+			<p>To answer this question, I made the following data visualization. I took the logs from our class chatroom, massaged them with some regular expressions (while dodging flying cars, of course), and created an interactive graph using D3.js.</p>
 
 			<p>Here's what what our months of chats graphed over a 24-hour cycle looks like. (Midnight on the left to 11pm on the right.)</p>
 
 			<div style="clear: both;"></div>
-
 		</div>
 
 		<div id="content">
@@ -59,21 +53,20 @@
 				<section><div id="legend"></div></section>
 			</form>
 
-				<div id="chart_container">
-					<div id="chart"></div>
-					<div id="timeline"></div>
-					<div id="slider"></div>
-				</div>
-
+			<div id="chart_container">
+				<div id="chart"></div>
+				<div id="timeline"></div>
+				<div id="slider"></div>
+			</div>
 		</div>
 
 		<div class="hipchat-text hipchat-text2">
-			<p>What can we extract from this visualization?  First, <i>everybody</i> in the class seems to prefer (or endure) staying up late to work.  The chatroom's peak hours are after midnight.  Activity dies after 2am, and then picks back up around 7am.  There are dips during lunch and dinner times, and peaks during mid morning and afternoon.  All this might be expected, and you can see variations in individuals' chat patterns.  Some students are active early, and others late.  As for Joe, is he really the mightiest Hipchat Warrior of them all?</p>  
+			<p>What can we extract from this visualization? First, <i>everybody</i> in the class seems to prefer (or endure) staying up late to work. The chatroom's peak hours are after midnight. Activity dies after 2am, and then picks back up around 7am. There are dips during lunch and dinner times, and peaks during mid morning and afternoon. All this might be expected, and you can see variations in individuals' chat patterns. Some students are active early, and others late. As for Joe, is he really the mightiest Hipchat Warrior of them all?</p>
 
 			<p>It's clear at a glance - indeed Joe is!</p>
 
-		  <p>With more than twice as many chats after midnight than the next-closest classmate, Joe is posing coding questions and helping out his classmates more, and later, than anybody else.  But what percentage of his chats are deliriously posted gifs.  Such secrets shall remain safely locked away in archived class chat logs, known only to to Joe's fellow <span>Hipchat Warriors</span>.</p>
-		</div>  	
+			<p>With more than twice as many chats after midnight than the next-closest classmate, Joe is posing coding questions and helping out his classmates more, and later, than anybody else. But what percentage of his chats are deliriously posted gifs. Such secrets shall remain safely locked away in archived class chat logs, known only to to Joe's fellow <span>Hipchat Warriors</span>.</p>
+		</div>
 
 		<!-- js -->
 		<script src="js/d3.v3.js"></script>
@@ -104,6 +97,5 @@
 		<script src="js/Rickshaw.Graph.Axis.Y.js"></script>
 		<script src="js/extensions.js"></script>
 		<script src="js/hipchat.js"></script>
-
 	</body>
 </html>

@@ -1,7 +1,6 @@
 div, span, p, td {
 	font-family: 'Nobile', sans-serif;
 }
-
 #chart {
 	display: inline-block;
 	margin: 20px;
@@ -24,7 +23,6 @@ div, span, p, td {
 	width: 0;
 }
 #chart_container {
-
 	min-width: 800;
 	position: relative;
 	display: inline-block;
