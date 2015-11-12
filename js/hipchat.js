@@ -509,7 +509,7 @@ $(document).ready(function(){
 								{x: 1384203600, y: 12},
 								{x: 1384207200, y: 35},
 								{x: 1384210800, y: 12}],
-					name: 'Stan'
+					name: 'Stas'
 				},
 				{
 					color: palette.color(),
